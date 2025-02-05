@@ -1,0 +1,18 @@
+[submodule "indicator-service"]
+	path = indicator-service
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/indicator-service.git
+[submodule "questions-service"]
+	path = questions-service
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/questions-service.git
+[submodule "knowledge-base"]
+	path = knowledge-base
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/knowledge-base.git
+[submodule "data-collector"]
+	path = data-collector
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/data-collector.git
+[submodule "user-service"]
+	path = user-service
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/user-service.git
+[submodule "user-interface"]
+	path = user-interface
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/user-interface.git

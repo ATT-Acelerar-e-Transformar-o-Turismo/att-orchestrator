@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  user-service:
+    ports:
+      - "8081:8080"
+    networks:
+      - att-network
+
+  data-collector:
+    ports:
+      - "8082:8080"
+    networks:
+      - att-network
+
+  questions-service:
+    ports:
+      - "8083:8080"
+    networks:
+      - att-network
+
+  indicator-service:
+    ports:
+      - "8084:8080"
+    networks:
+      - att-network
+
+  knowledge-base:
+    ports:
+      - "8085:8080"
+    networks:
+      - att-network
+
+networks:
+  att-network:

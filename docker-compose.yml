@@ -1,0 +1,67 @@
+version: '3.8'
+
+include:
+  - ./user-service/docker-compose.yml
+  - ./data-collector/docker-compose.yml
+  - ./questions-service/docker-compose.yml
+  - ./indicator-service/docker-compose.yml
+  - ./knowledge-base/docker-compose.yml
+
+services:
+  reverse-proxy:
+    image: nginx:latest
+    container_name: reverse-proxy
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - att-network
+
+  services-mq:
+    image: rabbitmq:management
+    container_name: services-mq
+    hostname: services-mq
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - att-network
+
+  data-mq:
+    image: rabbitmq:management
+    container_name: data-mq
+    hostname: data-mq
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+    networks:
+      - att-network
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.1.1
+    container_name: keycloak
+    environment:
+      KC_HOSTNAME_PORT: 7080
+      KC_HOSTNAME_STRICT_BACKCHANNEL: "true"
+      KEYCLOAK_ADMIN_USERNAME: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_HEALTH_ENABLED: "true"
+      KC_LOG_LEVEL: info
+    command: ["start-dev", "--http-port", "7080", "--https-port", "7443"]
+    ports:
+      - "7080:7080"
+      - "7443:7443"
+    networks:
+      - att-network
+
+networks:
+  att-network:
+
