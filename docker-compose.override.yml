@@ -21,3 +21,12 @@ services:
     ports:
       - "8085:8080"
 
+  user-interface:
+    build:
+      context: ./user-interface
+      dockerfile: Dockerfile
+    container_name: att-user-interface
+    ports:
+      - "3000:80"
+    networks:
+      - att-network
