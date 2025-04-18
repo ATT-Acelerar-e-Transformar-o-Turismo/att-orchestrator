@@ -1,7 +1,7 @@
 include:
   - ./user-service/docker-compose.yml
   - ./data-collector/docker-compose.yml
-  - ./questions-service/docker-compose.yml
+  - ./resource-service/docker-compose.yml
   - ./indicator-service/docker-compose.yml
   - ./knowledge-base/docker-compose.yml
   - ./user-interface/docker-compose.yml

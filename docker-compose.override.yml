@@ -9,7 +9,7 @@ services:
     ports:
       - "8082:8080"
 
-  questions-service:
+  resource-service:
     ports:
       - "8083:8080"
 
