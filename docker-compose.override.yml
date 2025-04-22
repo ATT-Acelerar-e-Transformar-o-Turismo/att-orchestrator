@@ -16,6 +16,9 @@ services:
   indicator-service:
     ports:
       - "8084:8080"
+    container_name: indicator-service
+    networks:
+      - att-network
 
   knowledge-base:
     ports:
