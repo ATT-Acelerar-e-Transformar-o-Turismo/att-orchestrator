@@ -4,25 +4,43 @@ services:
   user-service:
     ports:
       - "8081:8080"
+    networks:
+      - att-network
 
   data-collector:
     ports:
       - "8082:8080"
+    networks:
+      - att-network
 
   resource-service:
     ports:
       - "8083:8080"
+    networks:
+      - att-network
 
   indicator-service:
     ports:
       - "8084:8080"
     container_name: indicator-service
     networks:
-      - att-network
+      att-network:
+        aliases:
+          - indicator-service
+    environment:
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq/
+
+  rabbitmq:
+    networks:
+      att-network:
+        aliases:
+          - rabbitmq
 
   knowledge-base:
     ports:
       - "8085:8080"
+    networks:
+      - att-network
 
   user-interface:
     build:
@@ -31,5 +49,17 @@ services:
     container_name: att-user-interface
     ports:
       - "3000:80"
+    networks:
+      - att-network
+
+  reverse-proxy:
+    restart: on-failure
+    depends_on:
+      - indicator-service
+      - user-service
+      - data-collector
+      - resource-service
+      - knowledge-base
+      - user-interface
     networks:
       - att-network
