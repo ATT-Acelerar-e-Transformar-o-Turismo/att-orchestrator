@@ -1,9 +1,9 @@
 [submodule "indicator-service"]
 	path = indicator-service
 	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/indicator-service.git
-[submodule "questions-service"]
-	path = questions-service
-	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/questions-service.git
+[submodule "resource-service"]
+	path = resource-service
+	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/resource-service.git
 [submodule "knowledge-base"]
 	path = knowledge-base
 	url = https://github.com/ATT-Acelerar-e-Transformar-o-Turismo/knowledge-base.git
