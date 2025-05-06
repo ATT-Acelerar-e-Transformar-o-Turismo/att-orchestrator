@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   user-service:
     ports:
@@ -20,6 +18,8 @@ services:
       - att-network
 
   indicator-service:
+    environment:
+      - RABBITMQ_URL=amqp://user:password@services-mq/
     ports:
       - "8084:8080"
     container_name: indicator-service
