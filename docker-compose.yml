@@ -4,6 +4,7 @@ include:
   - ./resource-service/docker-compose.yml
   - ./indicator-service/docker-compose.yml
   - ./knowledge-base/docker-compose.yml
+  - ./user-interface/docker-compose.yml
 
 services:
   reverse-proxy:
@@ -16,6 +17,8 @@ services:
       - "443:443"
     networks:
       - att-network
+    depends_on:
+      - user-interface
 
   services-mq:
     image: rabbitmq:management
