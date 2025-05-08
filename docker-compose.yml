@@ -15,8 +15,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    networks:
-      - att-network
     depends_on:
       - user-interface
 
@@ -29,8 +27,12 @@ services:
       RABBITMQ_DEFAULT_PASS: password
     ports:
       - "15672:15672"
-    networks:
-      - att-network
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 10s
+      timeout: 8s
+      retries: 6
+    restart: on-failure
 
   data-mq:
     image: rabbitmq:management
@@ -42,8 +44,13 @@ services:
     ports:
       - "5673:5672"
       - "15673:15672"
-    networks:
-      - att-network
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 10s
+      timeout: 8s
+      retries: 6
+    restart: on-failure
+
 
   keycloak:
     image: quay.io/keycloak/keycloak:26.1.1
@@ -59,9 +66,5 @@ services:
     ports:
       - "7080:7080"
       - "7443:7443"
-    networks:
-      - att-network
 
-networks:
-  att-network:
 

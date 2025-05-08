@@ -5,11 +5,33 @@ services:
     networks:
       - att-network
 
+
   data-collector:
     ports:
       - "8082:8080"
+    environment:
+      - REDIS_HOST=data-collector-redis
+      - REDIS_PORT=6379
+      - DATA_MQ_HOST=data-mq
+      - DATA_MQ_PORT=5672
+      - DATA_MQ_USER=user
+      - DATA_MQ_PASS=password
+      - SERVICES_MQ_HOST=services-mq
+      - SERVICES_MQ_PORT=5672
+      - SERVICES_MQ_USER=user
+      - SERVICES_MQ_PASS=password
     networks:
       - att-network
+    depends_on:
+      data-mq:
+        condition: service_healthy
+      services-mq:
+        condition: service_healthy
+
+  data-collector-redis:
+    networks:
+      - att-network
+
 
   resource-service:
     ports:
@@ -17,9 +39,8 @@ services:
     networks:
       - att-network
 
+
   indicator-service:
-    environment:
-      - RABBITMQ_URL=amqp://user:password@services-mq/
     ports:
       - "8084:8080"
     container_name: indicator-service
@@ -28,13 +49,19 @@ services:
         aliases:
           - indicator-service
     environment:
-      - RABBITMQ_URL=amqp://guest:guest@rabbitmq/
-
-  rabbitmq:
+      - REDIS_HOST=indicators-redis
+      - REDIS_PORT=6379
+      - MONGO_URI=mongodb://indicators-mongo/indicators
+      - RABBITMQ_URL=amqp://guest:guest@services-mq/
+  
+  indicators-redis:
     networks:
-      att-network:
-        aliases:
-          - rabbitmq
+      - att-network
+
+  indicators-mongo:
+    networks:
+      - att-network
+
 
   knowledge-base:
     ports:
@@ -43,9 +70,6 @@ services:
       - att-network
 
   user-interface:
-    build:
-      context: ./user-interface
-      dockerfile: Dockerfile
     container_name: att-user-interface
     ports:
       - "3000:80"
@@ -63,3 +87,18 @@ services:
       - user-interface
     networks:
       - att-network
+
+  services-mq:
+    networks:
+      - att-network
+
+  data-mq:
+    networks:
+      - att-network
+  
+  keycloak:
+    networks:
+      - att-network
+
+networks:
+  att-network:
