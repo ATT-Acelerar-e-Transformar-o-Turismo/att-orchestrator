@@ -9,6 +9,7 @@ services:
   data-collector:
     ports:
       - "8082:8080"
+    container_name: data-collector
     environment:
       - REDIS_HOST=data-collector-redis
       - REDIS_PORT=6379
@@ -36,8 +37,14 @@ services:
   resource-service:
     ports:
       - "8083:8080"
+    container_name: resource-service
     networks:
       - att-network
+    environment:
+      - MONGO_URI=mongodb://resource-mongo:27017/resources
+    depends_on:
+      resource-mongo:
+        condition: service_healthy
 
 
   indicator-service:
@@ -52,7 +59,11 @@ services:
       - REDIS_HOST=indicators-redis
       - REDIS_PORT=6379
       - MONGO_URI=mongodb://indicators-mongo/indicators
-      - RABBITMQ_URL=amqp://guest:guest@services-mq/
+      - RABBITMQ_URL=amqp://user:password@services-mq/
+    depends_on:
+      services-mq:
+        condition: service_healthy
+
   
   indicators-redis:
     networks:
