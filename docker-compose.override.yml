@@ -73,6 +73,10 @@ services:
     networks:
       - att-network
 
+  resource-mongo:
+    networks:
+      - att-network
+
 
   knowledge-base:
     ports:
@@ -82,8 +86,6 @@ services:
 
   user-interface:
     container_name: att-user-interface
-    ports:
-      - "3000:80"
     networks:
       - att-network
 
