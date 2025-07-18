@@ -46,6 +46,10 @@ services:
       resource-mongo:
         condition: service_healthy
 
+  resource-mongo:
+    networks:
+      - att-network
+
 
   indicator-service:
     ports:
