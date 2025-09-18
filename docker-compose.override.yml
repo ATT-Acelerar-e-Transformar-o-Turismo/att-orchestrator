@@ -5,22 +5,15 @@ services:
     networks:
       - att-network
 
-
   data-collector:
     ports:
       - "8082:8080"
     container_name: data-collector
     environment:
-      - REDIS_HOST=data-collector-redis
-      - REDIS_PORT=6379
-      - DATA_MQ_HOST=data-mq
-      - DATA_MQ_PORT=5672
-      - DATA_MQ_USER=user
-      - DATA_MQ_PASS=password
-      - SERVICES_MQ_HOST=services-mq
-      - SERVICES_MQ_PORT=5672
-      - SERVICES_MQ_USER=user
-      - SERVICES_MQ_PASS=password
+      - REDIS_URL=redis://data-collector-redis:6379
+      - DATA_RABBITMQ_URL=amqp://user:password@data-mq:5672/
+      - SERVICES_RABBITMQ_URL=amqp://user:password@services-mq:5672/
+      - ORIGINS=${ORIGINS:-localhost}
     networks:
       - att-network
     depends_on:
@@ -28,11 +21,6 @@ services:
         condition: service_healthy
       services-mq:
         condition: service_healthy
-
-  data-collector-redis:
-    networks:
-      - att-network
-
 
   resource-service:
     ports:
@@ -42,10 +30,11 @@ services:
       - att-network
     environment:
       - MONGO_URI=mongodb://resource-mongo:27017/resources
+      - RABBITMQ_URL=amqp://user:password@services-mq/
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
     depends_on:
       resource-mongo:
         condition: service_healthy
-
 
   indicator-service:
     ports:
@@ -63,16 +52,6 @@ services:
     depends_on:
       services-mq:
         condition: service_healthy
-
-  
-  indicators-redis:
-    networks:
-      - att-network
-
-  indicators-mongo:
-    networks:
-      - att-network
-
 
   knowledge-base:
     ports:
@@ -106,10 +85,11 @@ services:
   data-mq:
     networks:
       - att-network
-  
+
   keycloak:
     networks:
       - att-network
 
 networks:
   att-network:
+    driver: bridge
