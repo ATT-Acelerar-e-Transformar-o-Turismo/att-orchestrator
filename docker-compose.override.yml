@@ -69,12 +69,18 @@ services:
   reverse-proxy:
     restart: on-failure
     depends_on:
-      - indicator-service
-      - user-service
-      - data-collector
-      - resource-service
-      - knowledge-base
-      - user-interface
+      indicator-service:
+        condition: service_started
+      user-service:
+        condition: service_started
+      data-collector:
+        condition: service_started
+      resource-service:
+        condition: service_started
+      knowledge-base:
+        condition: service_started
+      user-interface:
+        condition: service_started
     networks:
       - att-network
 
