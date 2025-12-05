@@ -1,0 +1,3914 @@
+
+
+
+	
+	[ {
+  "IndicadorCod" : "0012248",
+  "IndicadorDsg" : "Valor mediano de avaliação bancária (€/ m²) por Localização geográfica (Município - 2024) e Tipo de construção; Mensal - INE, Inquérito à avaliação bancária na habitação",
+  "MetaInfUrl" : "https://www.ine.pt/bddXplorer/htdocs/minfo.jsp?var_cd=0012248&lingua=PT",
+  "DataExtracao" : "2025-10-28T04:45:51.042Z",
+  "DataUltimoAtualizacao" : "2025-10-24",
+  "UltimoPref" : "Setembro de 2025",
+  "Dados" : {
+    "Janeiro de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "794",
+      "valor" : "794"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "877",
+      "valor" : "877"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "925",
+      "valor" : "925"
+    } ],
+    "Fevereiro de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "800",
+      "valor" : "800"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "887",
+      "valor" : "887"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "938",
+      "valor" : "938"
+    } ],
+    "Março de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "809",
+      "valor" : "809"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "898",
+      "valor" : "898"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "949",
+      "valor" : "949"
+    } ],
+    "Abril de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "818",
+      "valor" : "818"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "900",
+      "valor" : "900"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "950",
+      "valor" : "950"
+    } ],
+    "Maio de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "814",
+      "valor" : "814"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "889",
+      "valor" : "889"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "933",
+      "valor" : "933"
+    } ],
+    "Junho de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "810",
+      "valor" : "810"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "872",
+      "valor" : "872"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "912",
+      "valor" : "912"
+    } ],
+    "Julho de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "800",
+      "valor" : "800"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "859",
+      "valor" : "859"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "902",
+      "valor" : "902"
+    } ],
+    "Agosto de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "794",
+      "valor" : "794"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "852",
+      "valor" : "852"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "889",
+      "valor" : "889"
+    } ],
+    "Setembro de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "787",
+      "valor" : "787"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "844",
+      "valor" : "844"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "882",
+      "valor" : "882"
+    } ],
+    "Outubro de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "785",
+      "valor" : "785"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "833",
+      "valor" : "833"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "869",
+      "valor" : "869"
+    } ],
+    "Novembro de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "787",
+      "valor" : "787"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "829",
+      "valor" : "829"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "857",
+      "valor" : "857"
+    } ],
+    "Dezembro de 2011" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "779",
+      "valor" : "779"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "818",
+      "valor" : "818"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "841",
+      "valor" : "841"
+    } ],
+    "Janeiro de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "769",
+      "valor" : "769"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "809",
+      "valor" : "809"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "834",
+      "valor" : "834"
+    } ],
+    "Fevereiro de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "768",
+      "valor" : "768"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "810",
+      "valor" : "810"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "836",
+      "valor" : "836"
+    } ],
+    "Março de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "769",
+      "valor" : "769"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "811",
+      "valor" : "811"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "837",
+      "valor" : "837"
+    } ],
+    "Abril de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "770",
+      "valor" : "770"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "814",
+      "valor" : "814"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "838",
+      "valor" : "838"
+    } ],
+    "Maio de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "757",
+      "valor" : "757"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "800",
+      "valor" : "800"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "826",
+      "valor" : "826"
+    } ],
+    "Junho de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "750",
+      "valor" : "750"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "791",
+      "valor" : "791"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "812",
+      "valor" : "812"
+    } ],
+    "Julho de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "742",
+      "valor" : "742"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "787",
+      "valor" : "787"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "810",
+      "valor" : "810"
+    } ],
+    "Agosto de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "739",
+      "valor" : "739"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "784",
+      "valor" : "784"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "808",
+      "valor" : "808"
+    } ],
+    "Setembro de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "730",
+      "valor" : "730"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "784",
+      "valor" : "784"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "816",
+      "valor" : "816"
+    } ],
+    "Outubro de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "728",
+      "valor" : "728"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "778",
+      "valor" : "778"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "809",
+      "valor" : "809"
+    } ],
+    "Novembro de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "728",
+      "valor" : "728"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "774",
+      "valor" : "774"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "803",
+      "valor" : "803"
+    } ],
+    "Dezembro de 2012" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "728",
+      "valor" : "728"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "770",
+      "valor" : "770"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "795",
+      "valor" : "795"
+    } ],
+    "Janeiro de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "715",
+      "valor" : "715"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "759",
+      "valor" : "759"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "787",
+      "valor" : "787"
+    } ],
+    "Fevereiro de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "698",
+      "valor" : "698"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "746",
+      "valor" : "746"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "776",
+      "valor" : "776"
+    } ],
+    "Março de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "686",
+      "valor" : "686"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "742",
+      "valor" : "742"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "769",
+      "valor" : "769"
+    } ],
+    "Abril de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "697",
+      "valor" : "697"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "748",
+      "valor" : "748"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "771",
+      "valor" : "771"
+    } ],
+    "Maio de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "694",
+      "valor" : "694"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "758",
+      "valor" : "758"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "786",
+      "valor" : "786"
+    } ],
+    "Junho de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "706",
+      "valor" : "706"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "764",
+      "valor" : "764"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "800",
+      "valor" : "800"
+    } ],
+    "Julho de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "689",
+      "valor" : "689"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "759",
+      "valor" : "759"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "799",
+      "valor" : "799"
+    } ],
+    "Agosto de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "703",
+      "valor" : "703"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "761",
+      "valor" : "761"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "795",
+      "valor" : "795"
+    } ],
+    "Setembro de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "696",
+      "valor" : "696"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "763",
+      "valor" : "763"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "800",
+      "valor" : "800"
+    } ],
+    "Outubro de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "703",
+      "valor" : "703"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "765",
+      "valor" : "765"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "802",
+      "valor" : "802"
+    } ],
+    "Novembro de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "699",
+      "valor" : "699"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "762",
+      "valor" : "762"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "799",
+      "valor" : "799"
+    } ],
+    "Dezembro de 2013" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "708",
+      "valor" : "708"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "763",
+      "valor" : "763"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "794",
+      "valor" : "794"
+    } ],
+    "Janeiro de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "706",
+      "valor" : "706"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "760",
+      "valor" : "760"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "789",
+      "valor" : "789"
+    } ],
+    "Fevereiro de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "709",
+      "valor" : "709"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "752",
+      "valor" : "752"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "779",
+      "valor" : "779"
+    } ],
+    "Março de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "698",
+      "valor" : "698"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "739",
+      "valor" : "739"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "765",
+      "valor" : "765"
+    } ],
+    "Abril de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "696",
+      "valor" : "696"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "736",
+      "valor" : "736"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "760",
+      "valor" : "760"
+    } ],
+    "Maio de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "684",
+      "valor" : "684"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "738",
+      "valor" : "738"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "772",
+      "valor" : "772"
+    } ],
+    "Junho de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "688",
+      "valor" : "688"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "748",
+      "valor" : "748"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "786",
+      "valor" : "786"
+    } ],
+    "Julho de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "700",
+      "valor" : "700"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "763",
+      "valor" : "763"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "806",
+      "valor" : "806"
+    } ],
+    "Agosto de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "710",
+      "valor" : "710"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "775",
+      "valor" : "775"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "816",
+      "valor" : "816"
+    } ],
+    "Setembro de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "709",
+      "valor" : "709"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "772",
+      "valor" : "772"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "813",
+      "valor" : "813"
+    } ],
+    "Outubro de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "700",
+      "valor" : "700"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "756",
+      "valor" : "756"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "798",
+      "valor" : "798"
+    } ],
+    "Novembro de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "695",
+      "valor" : "695"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "751",
+      "valor" : "751"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "791",
+      "valor" : "791"
+    } ],
+    "Dezembro de 2014" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "700",
+      "valor" : "700"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "751",
+      "valor" : "751"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "792",
+      "valor" : "792"
+    } ],
+    "Janeiro de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "702",
+      "valor" : "702"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "756",
+      "valor" : "756"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "796",
+      "valor" : "796"
+    } ],
+    "Fevereiro de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "704",
+      "valor" : "704"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "756",
+      "valor" : "756"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "794",
+      "valor" : "794"
+    } ],
+    "Março de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "693",
+      "valor" : "693"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "756",
+      "valor" : "756"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "795",
+      "valor" : "795"
+    } ],
+    "Abril de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "690",
+      "valor" : "690"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "760",
+      "valor" : "760"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "800",
+      "valor" : "800"
+    } ],
+    "Maio de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "696",
+      "valor" : "696"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "768",
+      "valor" : "768"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "808",
+      "valor" : "808"
+    } ],
+    "Junho de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "704",
+      "valor" : "704"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "769",
+      "valor" : "769"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "811",
+      "valor" : "811"
+    } ],
+    "Julho de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "714",
+      "valor" : "714"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "776",
+      "valor" : "776"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "819",
+      "valor" : "819"
+    } ],
+    "Agosto de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "711",
+      "valor" : "711"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "774",
+      "valor" : "774"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "823",
+      "valor" : "823"
+    } ],
+    "Setembro de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "713",
+      "valor" : "713"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "777",
+      "valor" : "777"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "827",
+      "valor" : "827"
+    } ],
+    "Outubro de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "714",
+      "valor" : "714"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "780",
+      "valor" : "780"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "827",
+      "valor" : "827"
+    } ],
+    "Novembro de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "717",
+      "valor" : "717"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "783",
+      "valor" : "783"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "824",
+      "valor" : "824"
+    } ],
+    "Dezembro de 2015" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "722",
+      "valor" : "722"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "788",
+      "valor" : "788"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "825",
+      "valor" : "825"
+    } ],
+    "Janeiro de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "720",
+      "valor" : "720"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "785",
+      "valor" : "785"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "822",
+      "valor" : "822"
+    } ],
+    "Fevereiro de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "721",
+      "valor" : "721"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "785",
+      "valor" : "785"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "827",
+      "valor" : "827"
+    } ],
+    "Março de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "714",
+      "valor" : "714"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "788",
+      "valor" : "788"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "832",
+      "valor" : "832"
+    } ],
+    "Abril de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "717",
+      "valor" : "717"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "794",
+      "valor" : "794"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "836",
+      "valor" : "836"
+    } ],
+    "Maio de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "727",
+      "valor" : "727"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "800",
+      "valor" : "800"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "839",
+      "valor" : "839"
+    } ],
+    "Junho de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "738",
+      "valor" : "738"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "803",
+      "valor" : "803"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "840",
+      "valor" : "840"
+    } ],
+    "Julho de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "741",
+      "valor" : "741"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "806",
+      "valor" : "806"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "845",
+      "valor" : "845"
+    } ],
+    "Agosto de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "748",
+      "valor" : "748"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "814",
+      "valor" : "814"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "852",
+      "valor" : "852"
+    } ],
+    "Setembro de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "751",
+      "valor" : "751"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "816",
+      "valor" : "816"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "857",
+      "valor" : "857"
+    } ],
+    "Outubro de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "755",
+      "valor" : "755"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "820",
+      "valor" : "820"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "860",
+      "valor" : "860"
+    } ],
+    "Novembro de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "754",
+      "valor" : "754"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "826",
+      "valor" : "826"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "870",
+      "valor" : "870"
+    } ],
+    "Dezembro de 2016" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "766",
+      "valor" : "766"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "833",
+      "valor" : "833"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "879",
+      "valor" : "879"
+    } ],
+    "Janeiro de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "777",
+      "valor" : "777"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "841",
+      "valor" : "841"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "885",
+      "valor" : "885"
+    } ],
+    "Fevereiro de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "779",
+      "valor" : "779"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "847",
+      "valor" : "847"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "893",
+      "valor" : "893"
+    } ],
+    "Março de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "772",
+      "valor" : "772"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "849",
+      "valor" : "849"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "897",
+      "valor" : "897"
+    } ],
+    "Abril de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "768",
+      "valor" : "768"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "854",
+      "valor" : "854"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "903",
+      "valor" : "903"
+    } ],
+    "Maio de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "780",
+      "valor" : "780"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "857",
+      "valor" : "857"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "904",
+      "valor" : "904"
+    } ],
+    "Junho de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "793",
+      "valor" : "793"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "860",
+      "valor" : "860"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "905",
+      "valor" : "905"
+    } ],
+    "Julho de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "795",
+      "valor" : "795"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "861",
+      "valor" : "861"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "911",
+      "valor" : "911"
+    } ],
+    "Agosto de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "797",
+      "valor" : "797"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "868",
+      "valor" : "868"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "917",
+      "valor" : "917"
+    } ],
+    "Setembro de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "801",
+      "valor" : "801"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "881",
+      "valor" : "881"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "935",
+      "valor" : "935"
+    } ],
+    "Outubro de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "806",
+      "valor" : "806"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "886",
+      "valor" : "886"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "935",
+      "valor" : "935"
+    } ],
+    "Novembro de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "807",
+      "valor" : "807"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "889",
+      "valor" : "889"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "941",
+      "valor" : "941"
+    } ],
+    "Dezembro de 2017" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "806",
+      "valor" : "806"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "891",
+      "valor" : "891"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "945",
+      "valor" : "945"
+    } ],
+    "Janeiro de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "811",
+      "valor" : "811"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "902",
+      "valor" : "902"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "958",
+      "valor" : "958"
+    } ],
+    "Fevereiro de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "815",
+      "valor" : "815"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "911",
+      "valor" : "911"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "967",
+      "valor" : "967"
+    } ],
+    "Março de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "820",
+      "valor" : "820"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "920",
+      "valor" : "920"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "973",
+      "valor" : "973"
+    } ],
+    "Abril de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "817",
+      "valor" : "817"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "924",
+      "valor" : "924"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "978",
+      "valor" : "978"
+    } ],
+    "Maio de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "819",
+      "valor" : "819"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "929",
+      "valor" : "929"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "984",
+      "valor" : "984"
+    } ],
+    "Junho de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "823",
+      "valor" : "823"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "932",
+      "valor" : "932"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "991",
+      "valor" : "991"
+    } ],
+    "Julho de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "840",
+      "valor" : "840"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "941",
+      "valor" : "941"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 000",
+      "valor" : "1000"
+    } ],
+    "Agosto de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "856",
+      "valor" : "856"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "951",
+      "valor" : "951"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 009",
+      "valor" : "1009"
+    } ],
+    "Setembro de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "864",
+      "valor" : "864"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "959",
+      "valor" : "959"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 019",
+      "valor" : "1019"
+    } ],
+    "Outubro de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "860",
+      "valor" : "860"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "967",
+      "valor" : "967"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 033",
+      "valor" : "1033"
+    } ],
+    "Novembro de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "856",
+      "valor" : "856"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "968",
+      "valor" : "968"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 034",
+      "valor" : "1034"
+    } ],
+    "Dezembro de 2018" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "863",
+      "valor" : "863"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "977",
+      "valor" : "977"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 041",
+      "valor" : "1041"
+    } ],
+    "Janeiro de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "872",
+      "valor" : "872"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "983",
+      "valor" : "983"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 046",
+      "valor" : "1046"
+    } ],
+    "Fevereiro de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "879",
+      "valor" : "879"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 000",
+      "valor" : "1000"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 068",
+      "valor" : "1068"
+    } ],
+    "Março de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "878",
+      "valor" : "878"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 006",
+      "valor" : "1006"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 082",
+      "valor" : "1082"
+    } ],
+    "Abril de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "880",
+      "valor" : "880"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 015",
+      "valor" : "1015"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 097",
+      "valor" : "1097"
+    } ],
+    "Maio de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "882",
+      "valor" : "882"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 023",
+      "valor" : "1023"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 108",
+      "valor" : "1108"
+    } ],
+    "Junho de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "885",
+      "valor" : "885"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 030",
+      "valor" : "1030"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 115",
+      "valor" : "1115"
+    } ],
+    "Julho de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "895",
+      "valor" : "895"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 044",
+      "valor" : "1044"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 130",
+      "valor" : "1130"
+    } ],
+    "Agosto de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "907",
+      "valor" : "907"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 054",
+      "valor" : "1054"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 136",
+      "valor" : "1136"
+    } ],
+    "Setembro de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "914",
+      "valor" : "914"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 066",
+      "valor" : "1066"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 151",
+      "valor" : "1151"
+    } ],
+    "Outubro de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "914",
+      "valor" : "914"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 069",
+      "valor" : "1069"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 155",
+      "valor" : "1155"
+    } ],
+    "Novembro de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "912",
+      "valor" : "912"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 076",
+      "valor" : "1076"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 169",
+      "valor" : "1169"
+    } ],
+    "Dezembro de 2019" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "923",
+      "valor" : "923"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 091",
+      "valor" : "1091"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 183",
+      "valor" : "1183"
+    } ],
+    "Janeiro de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "923",
+      "valor" : "923"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 103",
+      "valor" : "1103"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 200",
+      "valor" : "1200"
+    } ],
+    "Fevereiro de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "928",
+      "valor" : "928"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 111",
+      "valor" : "1111"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 208",
+      "valor" : "1208"
+    } ],
+    "Março de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "923",
+      "valor" : "923"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 110",
+      "valor" : "1110"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 209",
+      "valor" : "1209"
+    } ],
+    "Abril de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "939",
+      "valor" : "939"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 111",
+      "valor" : "1111"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 210",
+      "valor" : "1210"
+    } ],
+    "Maio de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "953",
+      "valor" : "953"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 114",
+      "valor" : "1114"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 212",
+      "valor" : "1212"
+    } ],
+    "Junho de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "964",
+      "valor" : "964"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 119",
+      "valor" : "1119"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 220",
+      "valor" : "1220"
+    } ],
+    "Julho de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "964",
+      "valor" : "964"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 127",
+      "valor" : "1127"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 229",
+      "valor" : "1229"
+    } ],
+    "Agosto de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "956",
+      "valor" : "956"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 128",
+      "valor" : "1128"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 234",
+      "valor" : "1234"
+    } ],
+    "Setembro de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "953",
+      "valor" : "953"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 128",
+      "valor" : "1128"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 233",
+      "valor" : "1233"
+    } ],
+    "Outubro de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "947",
+      "valor" : "947"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 131",
+      "valor" : "1131"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 239",
+      "valor" : "1239"
+    } ],
+    "Novembro de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "954",
+      "valor" : "954"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 144",
+      "valor" : "1144"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 252",
+      "valor" : "1252"
+    } ],
+    "Dezembro de 2020" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "957",
+      "valor" : "957"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 156",
+      "valor" : "1156"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 266",
+      "valor" : "1266"
+    } ],
+    "Janeiro de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "968",
+      "valor" : "968"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 170",
+      "valor" : "1170"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 284",
+      "valor" : "1284"
+    } ],
+    "Fevereiro de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "975",
+      "valor" : "975"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 174",
+      "valor" : "1174"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 291",
+      "valor" : "1291"
+    } ],
+    "Março de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "993",
+      "valor" : "993"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 187",
+      "valor" : "1187"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 300",
+      "valor" : "1300"
+    } ],
+    "Abril de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 000",
+      "valor" : "1000"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 200",
+      "valor" : "1200"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 314",
+      "valor" : "1314"
+    } ],
+    "Maio de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 012",
+      "valor" : "1012"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 212",
+      "valor" : "1212"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 326",
+      "valor" : "1326"
+    } ],
+    "Junho de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 001",
+      "valor" : "1001"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 215",
+      "valor" : "1215"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 339",
+      "valor" : "1339"
+    } ],
+    "Julho de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "998",
+      "valor" : "998"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 221",
+      "valor" : "1221"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 350",
+      "valor" : "1350"
+    } ],
+    "Agosto de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "987",
+      "valor" : "987"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 221",
+      "valor" : "1221"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 356",
+      "valor" : "1356"
+    } ],
+    "Setembro de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "998",
+      "valor" : "998"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 236",
+      "valor" : "1236"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 369",
+      "valor" : "1369"
+    } ],
+    "Outubro de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 010",
+      "valor" : "1010"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 251",
+      "valor" : "1251"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 385",
+      "valor" : "1385"
+    } ],
+    "Novembro de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 031",
+      "valor" : "1031"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 272",
+      "valor" : "1272"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 401",
+      "valor" : "1401"
+    } ],
+    "Dezembro de 2021" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 030",
+      "valor" : "1030"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 285",
+      "valor" : "1285"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 419",
+      "valor" : "1419"
+    } ],
+    "Janeiro de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 037",
+      "valor" : "1037"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 292",
+      "valor" : "1292"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 437",
+      "valor" : "1437"
+    } ],
+    "Fevereiro de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 047",
+      "valor" : "1047"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 314",
+      "valor" : "1314"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 462",
+      "valor" : "1462"
+    } ],
+    "Março de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 067",
+      "valor" : "1067"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 331",
+      "valor" : "1331"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 476",
+      "valor" : "1476"
+    } ],
+    "Abril de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 083",
+      "valor" : "1083"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 356",
+      "valor" : "1356"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 507",
+      "valor" : "1507"
+    } ],
+    "Maio de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 104",
+      "valor" : "1104"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 380",
+      "valor" : "1380"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 529",
+      "valor" : "1529"
+    } ],
+    "Junho de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 122",
+      "valor" : "1122"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 407",
+      "valor" : "1407"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 563",
+      "valor" : "1563"
+    } ],
+    "Julho de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 129",
+      "valor" : "1129"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 417",
+      "valor" : "1417"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 575",
+      "valor" : "1575"
+    } ],
+    "Agosto de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 126",
+      "valor" : "1126"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 414",
+      "valor" : "1414"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 577",
+      "valor" : "1577"
+    } ],
+    "Setembro de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 136",
+      "valor" : "1136"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 429",
+      "valor" : "1429"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 591",
+      "valor" : "1591"
+    } ],
+    "Outubro de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 142",
+      "valor" : "1142"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 420",
+      "valor" : "1420"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 581",
+      "valor" : "1581"
+    } ],
+    "Novembro de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 148",
+      "valor" : "1148"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 449",
+      "valor" : "1449"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 610",
+      "valor" : "1610"
+    } ],
+    "Dezembro de 2022" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 148",
+      "valor" : "1148"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 458",
+      "valor" : "1458"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 633",
+      "valor" : "1633"
+    } ],
+    "Janeiro de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 152",
+      "valor" : "1152"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 485",
+      "valor" : "1485"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 672",
+      "valor" : "1672"
+    } ],
+    "Fevereiro de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 147",
+      "valor" : "1147"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 478",
+      "valor" : "1478"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 662",
+      "valor" : "1662"
+    } ],
+    "Março de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 135",
+      "valor" : "1135"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 483",
+      "valor" : "1483"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 664",
+      "valor" : "1664"
+    } ],
+    "Abril de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 137",
+      "valor" : "1137"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 491",
+      "valor" : "1491"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 667",
+      "valor" : "1667"
+    } ],
+    "Maio de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 153",
+      "valor" : "1153"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 510",
+      "valor" : "1510"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 689",
+      "valor" : "1689"
+    } ],
+    "Junho de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 173",
+      "valor" : "1173"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 518",
+      "valor" : "1518"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 692",
+      "valor" : "1692"
+    } ],
+    "Julho de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 184",
+      "valor" : "1184"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 525",
+      "valor" : "1525"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 698",
+      "valor" : "1698"
+    } ],
+    "Agosto de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 197",
+      "valor" : "1197"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 538",
+      "valor" : "1538"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 707",
+      "valor" : "1707"
+    } ],
+    "Setembro de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 198",
+      "valor" : "1198"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 541",
+      "valor" : "1541"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 708",
+      "valor" : "1708"
+    } ],
+    "Outubro de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 200",
+      "valor" : "1200"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 536",
+      "valor" : "1536"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 701",
+      "valor" : "1701"
+    } ],
+    "Novembro de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 199",
+      "valor" : "1199"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 530",
+      "valor" : "1530"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 696",
+      "valor" : "1696"
+    } ],
+    "Dezembro de 2023" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 210",
+      "valor" : "1210"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 536",
+      "valor" : "1536"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 703",
+      "valor" : "1703"
+    } ],
+    "Janeiro de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 222",
+      "valor" : "1222"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 550",
+      "valor" : "1550"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 725",
+      "valor" : "1725"
+    } ],
+    "Fevereiro de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 230",
+      "valor" : "1230"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 560",
+      "valor" : "1560"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 741",
+      "valor" : "1741"
+    } ],
+    "Março de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 239",
+      "valor" : "1239"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 580",
+      "valor" : "1580"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 759",
+      "valor" : "1759"
+    } ],
+    "Abril de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 248",
+      "valor" : "1248"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 596",
+      "valor" : "1596"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 769",
+      "valor" : "1769"
+    } ],
+    "Maio de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 263",
+      "valor" : "1263"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 610",
+      "valor" : "1610"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 780",
+      "valor" : "1780"
+    } ],
+    "Junho de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 272",
+      "valor" : "1272"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 618",
+      "valor" : "1618"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 796",
+      "valor" : "1796"
+    } ],
+    "Julho de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 281",
+      "valor" : "1281"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 638",
+      "valor" : "1638"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 818",
+      "valor" : "1818"
+    } ],
+    "Agosto de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 297",
+      "valor" : "1297"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 664",
+      "valor" : "1664"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 850",
+      "valor" : "1850"
+    } ],
+    "Setembro de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 301",
+      "valor" : "1301"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 695",
+      "valor" : "1695"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 882",
+      "valor" : "1882"
+    } ],
+    "Outubro de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 317",
+      "valor" : "1317"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 721",
+      "valor" : "1721"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 920",
+      "valor" : "1920"
+    } ],
+    "Novembro de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 320",
+      "valor" : "1320"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 740",
+      "valor" : "1740"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 944",
+      "valor" : "1944"
+    } ],
+    "Dezembro de 2024" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 322",
+      "valor" : "1322"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 747",
+      "valor" : "1747"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 962",
+      "valor" : "1962"
+    } ],
+    "Janeiro de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 326",
+      "valor" : "1326"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 774",
+      "valor" : "1774"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "1 993",
+      "valor" : "1993"
+    } ],
+    "Fevereiro de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 347",
+      "valor" : "1347"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 810",
+      "valor" : "1810"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 032",
+      "valor" : "2032"
+    } ],
+    "Março de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 369",
+      "valor" : "1369"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 847",
+      "valor" : "1847"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 071",
+      "valor" : "2071"
+    } ],
+    "Abril de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 385",
+      "valor" : "1385"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 866",
+      "valor" : "1866"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 105",
+      "valor" : "2105"
+    } ],
+    "Maio de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 394",
+      "valor" : "1394"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 886",
+      "valor" : "1886"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 155",
+      "valor" : "2155"
+    } ],
+    "Junho de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 389",
+      "valor" : "1389"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 911",
+      "valor" : "1911"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 208",
+      "valor" : "2208"
+    } ],
+    "Julho de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 414",
+      "valor" : "1414"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 945",
+      "valor" : "1945"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 254",
+      "valor" : "2254"
+    } ],
+    "Agosto de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 430",
+      "valor" : "1430"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 965",
+      "valor" : "1965"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 269",
+      "valor" : "2269"
+    } ],
+    "Setembro de 2025" : [ {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "2",
+      "dim_3_t" : "Moradias",
+      "ind_string" : "1 459",
+      "valor" : "1459"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "T",
+      "dim_3_t" : "Total",
+      "ind_string" : "1 995",
+      "valor" : "1995"
+    }, {
+      "geocod" : "PT",
+      "geodsg" : "Portugal",
+      "dim_3" : "1",
+      "dim_3_t" : "Apartamentos",
+      "ind_string" : "2 307",
+      "valor" : "2307"
+    } ]
+  },
+  "Sucesso" : {
+    "Verdadeiro" : [ {
+      "Msg" : "OK"
+    } ]
+  }
+} ]
+	
