@@ -1,0 +1,373 @@
+import asyncio
+import requests
+import os
+from datetime import datetime, timedelta
+from typing import List, Dict, Any, Optional
+import random
+import time
+import json # Import json for source_config parsing
+# import locale # For non-English month parsing, consider if using setlocale is appropriate for production
+
+from utils import RateLimitHandler, mask_credentials, HistoricalDataFetcher, MessageQueueSender, get_interval_from_periodicity, ContinuousExecutor
+
+
+class ATTWrapper:
+    def __init__(self, wrapper_id: str, rabbitmq_url: str = None, source_config: Dict[str, Any] = None):
+        # CRITICAL: wrapper_id is always a STRING (UUID), never an integer
+        self.wrapper_id = wrapper_id
+        self.rabbitmq_url = rabbitmq_url or os.getenv('AMQP_URL', 'amqp://guest:guest@localhost/')
+        self.source_type = "SourceType.API"
+        self.periodicity = "Monthly" # As per requirement
+        self.rate_limiter = RateLimitHandler()
+        self.historical_data_fetched = False
+        
+        # Wrapper metadata
+        self.metadata = {
+            "source_type": self.source_type,
+            "periodicity": self.periodicity,
+            "wrapper_version": "1.0",
+            "indicator_id": "6eed9edd-11a3-4bca-bf62-ce00eb51af1d", # From prompt
+            "indicator_name": "Valor mediano da avaliação bancária 4", # From prompt
+            "unit": "€/ m²", # From prompt
+            "domain": "Economia > Habitação" # From prompt
+        }
+        
+        # Store source configuration
+        if source_config is None:
+            raise ValueError("source_config must be provided for API wrappers.")
+        self.source_config = source_config
+
+        # Extract API configuration from source_config
+        self.base_url = self.source_config.get("location")
+        if not self.base_url:
+            raise ValueError("API 'location' (base_url) is missing in source_config.")
+        
+        self.auth_type = self.source_config.get("auth_type", "none").lower()
+        self.api_key = self.source_config.get("api_key")
+        self.api_key_header = self.source_config.get("api_key_header", "X-API-Key")
+        self.bearer_token = self.source_config.get("bearer_token")
+        self.username = self.source_config.get("username")
+        self.password = self.source_config.get("password")
+        self.timeout_seconds = self.source_config.get("timeout_seconds", 30)
+        self.retry_attempts = self.source_config.get("retry_attempts", 3)
+        self.custom_headers = self.source_config.get("custom_headers", {})
+        # Combine default query_params from the prompt's DATA SOURCE with any custom ones
+        # from source_config. Custom ones from source_config will override defaults if keys overlap.
+        default_query_params = {
+            "op": "2",
+            "varcd": "0012248",
+            "Dim1": "T",
+            "Dim2": "PT",
+            "lang": "PT"
+        }
+        self.query_params = {**default_query_params, **self.source_config.get("query_params", {})}
+
+        # Specific indicator details from prompt/sample
+        self.target_dim_3_t = "Total" # From DATA SAMPLE for the overall indicator
+        self.target_value_field = "valor" # From DATA SAMPLE
+
+        # Portuguese month mapping for parsing "Janeiro de 2011" like dates
+        self.portuguese_months = {
+            "Janeiro": 1, "Fevereiro": 2, "Março": 3, "Abril": 4,
+            "Maio": 5, "Junho": 6, "Julho": 7, "Agosto": 8,
+            "Setembro": 9, "Outubro": 10, "Novembro": 11, "Dezembro": 12
+        }
+
+        # Initialize utilities
+        self.message_sender = MessageQueueSender(self.wrapper_id, self.rabbitmq_url, self.metadata)
+        self.historical_fetcher = HistoricalDataFetcher(self.wrapper_id, self.get_interval_seconds)
+        self.continuous_executor = ContinuousExecutor(self.wrapper_id, self.get_interval_seconds())
+        
+    def get_interval_seconds(self) -> int:
+        """Convert periodicity to seconds for API sources.
+        For Monthly periodicity, return the interval for Monthly (approx. 30 days).
+        The ContinuousExecutor will handle the actual polling frequency based on this.
+        """
+        # get_interval_from_periodicity will return 2,592,000 for "Monthly"
+        return get_interval_from_periodicity(self.periodicity)
+
+    def _parse_month_year(self, date_str: str) -> Optional[datetime]:
+        """
+        Parses a Portuguese month-year string (e.g., "Janeiro de 2011") into a datetime object.
+        Assumes the first day of the month for standardization.
+        """
+        parts = date_str.replace(" de ", " ").split(" ")
+        if len(parts) != 2:
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: WARNING - Unexpected date format '{date_str}'. Expected 'Month de Year'. Skipping.")
+            return None
+        
+        month_name, year_str = parts[0], parts[1]
+        
+        month_num = self.portuguese_months.get(month_name)
+        if month_num is None:
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: WARNING - Unrecognized Portuguese month name '{month_name}' in '{date_str}'. Skipping.")
+            return None
+        
+        try:
+            year = int(year_str)
+            return datetime(year, month_num, 1) # Standardize to the first day of the month
+        except ValueError as e:
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - Could not parse year or create datetime for '{date_str}': {e}")
+            return None
+
+    def _prepare_request_args(self) -> Dict[str, Any]:
+        """Prepares headers and authentication for requests."""
+        headers = {
+            "Accept": "application/json",
+            **self.custom_headers
+        }
+        auth = None
+
+        if self.auth_type == "api_key" and self.api_key:
+            headers[self.api_key_header] = self.api_key
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Using API Key authentication via header '{self.api_key_header}'")
+        elif self.auth_type == "bearer" and self.bearer_token:
+            headers["Authorization"] = f"Bearer {self.bearer_token}"
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Using Bearer token authentication")
+        elif self.auth_type == "basic" and self.username and self.password:
+            auth = (self.username, self.password)
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Using Basic authentication")
+        elif self.auth_type == "none":
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: No authentication configured.")
+        else:
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: WARNING - Authentication type '{self.auth_type}' not supported or missing credentials.")
+
+        return {"headers": headers, "auth": auth, "timeout": self.timeout_seconds, "params": self.query_params}
+
+    def _process_api_response(self, json_data: Dict[str, Any], start_date: Optional[datetime] = None, end_date: Optional[datetime] = None) -> List[Dict[str, Any]]:
+        """
+        Processes the raw JSON data from the INE API into the standardized timeseries format.
+        Applies date filtering if start_date and end_date are provided.
+        """
+        data_points = []
+        
+        if not json_data or not isinstance(json_data, list) or not json_data[0].get("Dados"):
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: No 'Dados' found in response or unexpected JSON structure. Response: {json_data}")
+            return []
+
+        dados = json_data[0].get("Dados", {})
+
+        for date_key, monthly_data_list in dados.items():
+            data_datetime = self._parse_month_year(date_key)
+            if data_datetime is None:
+                continue # Skip if date parsing failed
+
+            # Apply date filtering (inclusive)
+            if start_date and data_datetime < start_date:
+                continue
+            if end_date and data_datetime > end_date: 
+                continue
+
+            for item in monthly_data_list:
+                # Filter for the specific geographic code 'PT' and dimension 'Total'
+                if item.get("geocod") == "PT" and item.get("dim_3_t") == self.target_dim_3_t:
+                    try:
+                        value_str = item.get(self.target_value_field)
+                        if value_str is None:
+                            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: WARNING - Missing value for '{self.target_value_field}' at {date_key}. Skipping.")
+                            continue
+                        value = float(value_str)
+                        data_points.append({
+                            "x": data_datetime.isoformat(),
+                            "y": value
+                        })
+                    except (ValueError, TypeError) as e:
+                        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: WARNING - Could not convert value '{item.get(self.target_value_field)}' to float for {date_key}: {e}. Skipping.")
+                        continue
+        
+        # Sort data points by date to ensure chronological order
+        data_points.sort(key=lambda p: p['x'])
+        return data_points
+
+    async def fetch_external_data(self) -> List[Dict[str, Any]]:
+        """
+        Fetch data from external source and convert to timeseries format
+        [{'x': 'YYYY-MM-DD HH:MM:SS', 'y': VALUE}, ...]
+        This method fetches all available data from the INE API as it does not support date range parameters in its base URL.
+        """
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Starting current data fetch from {self.source_type} source...")
+
+        request_args = self._prepare_request_args()
+        url = self.base_url 
+
+        for attempt in range(self.retry_attempts):
+            try:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Attempt {attempt + 1}/{self.retry_attempts} - Fetching from URL: {url} with params: {request_args.get('params')}")
+                response = requests.get(url, **request_args)
+                
+                await self.rate_limiter.handle_rate_limit(response) # Handles 429 and waits automatically
+
+                if response.status_code >= 400:
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - API responded with status code {response.status_code}. Response: {response.text}")
+                    # For non-429 client/server errors, retry if configured, otherwise return empty list
+                    if attempt < self.retry_attempts - 1:
+                        wait_time = 2 ** attempt  # Exponential backoff
+                        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Retrying in {wait_time} seconds...")
+                        await asyncio.sleep(wait_time)
+                        continue
+                    return [] # Return empty list after exhausting retries for other HTTP errors
+
+                json_data = response.json()
+                data_points = self._process_api_response(json_data)
+                
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Successfully fetched and processed {len(data_points)} data points.")
+                return data_points
+
+            except requests.exceptions.RequestException as e:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - Request failed: {e}")
+                if attempt < self.retry_attempts - 1:
+                    wait_time = 2 ** attempt
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Retrying in {wait_time} seconds...")
+                    await asyncio.sleep(wait_time)
+                else:
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Max retries reached. Failing to fetch data.")
+                    # Re-raise for ultimate failure after all retries for network issues
+                    raise 
+
+            except json.JSONDecodeError as e:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - Failed to decode JSON response: {e}. Response text: {response.text}")
+                if attempt < self.retry_attempts - 1:
+                    wait_time = 2 ** attempt
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Retrying in {wait_time} seconds...")
+                    await asyncio.sleep(wait_time)
+                else:
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Max retries reached. Failing to fetch data.")
+                    raise
+            except Exception as e:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: UNEXPECTED ERROR during data fetch: {str(e)}")
+                raise # Re-raise any other unexpected errors
+
+        return [] # Should not be reached if successful or an exception is raised
+
+    async def fetch_date_range(self, start_date: datetime, end_date: datetime) -> List[Dict[str, Any]]:
+        """
+        Fetch data for a specific date range from the API.
+        Since the INE API returns all data in a single call, we fetch all data first
+        and then apply the date range filtering locally.
+        """
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Fetching historical data from {start_date.isoformat()} to {end_date.isoformat()}...")
+        
+        request_args = self._prepare_request_args()
+        url = self.base_url
+
+        for attempt in range(self.retry_attempts):
+            try:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Attempt {attempt + 1}/{self.retry_attempts} - Fetching all data from URL: {url} for date range filtering.")
+                response = requests.get(url, **request_args)
+                
+                await self.rate_limiter.handle_rate_limit(response)
+
+                if response.status_code >= 400:
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - API responded with status code {response.status_code}. Response: {response.text}")
+                    if attempt < self.retry_attempts - 1:
+                        wait_time = 2 ** attempt
+                        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Retrying in {wait_time} seconds...")
+                        await asyncio.sleep(wait_time)
+                        continue
+                    return [] # Return empty list after exhausting retries for HTTP errors
+
+                json_data = response.json()
+                # Process the full response, applying the date range filter within _process_api_response
+                filtered_data_points = self._process_api_response(json_data, start_date=start_date, end_date=end_date)
+                
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Fetched and filtered {len(filtered_data_points)} points for date range {start_date.isoformat()} to {end_date.isoformat()}.")
+                return filtered_data_points
+
+            except requests.exceptions.RequestException as e:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - Request failed for date range {start_date.isoformat()} to {end_date.isoformat()}: {e}")
+                if attempt < self.retry_attempts - 1:
+                    wait_time = 2 ** attempt
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Retrying in {wait_time} seconds...")
+                    await asyncio.sleep(wait_time)
+                else:
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Max retries reached. Failing to fetch data for range.")
+                    raise
+            except json.JSONDecodeError as e:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: ERROR - Failed to decode JSON response for date range {start_date.isoformat()} to {end_date.isoformat()}: {e}. Response text: {response.text}")
+                if attempt < self.retry_attempts - 1:
+                    wait_time = 2 ** attempt
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Retrying in {wait_time} seconds...")
+                    await asyncio.sleep(wait_time)
+                else:
+                    print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Max retries reached. Failing to fetch data for range.")
+                    raise
+            except Exception as e:
+                print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: UNEXPECTED ERROR during date range fetch: {str(e)}")
+                raise
+
+        return []
+
+    async def fetch_historical_data(self) -> List[Dict[str, Any]]:
+        """
+        Fetch historical data from API with date range parameters
+
+        *** DO NOT MODIFY THIS METHOD ***
+        This method uses the HistoricalDataFetcher utility for optimal batch processing.
+        Only customize fetch_date_range() and fetch_external_data() methods.
+        """
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Starting historical data fetch...")
+        total_points_sent = await self.historical_fetcher.fetch_all_historical_data(
+            fetch_date_range_func=self.fetch_date_range,
+            send_to_queue_func=self.send_to_queue
+        )
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Completed historical data fetch - {total_points_sent} data points sent")
+        self.historical_data_fetched = True # Mark as fetched
+        return []  # Return empty list since data was already sent to queue
+    
+    async def send_to_queue(self, data_points: List[Dict[str, Any]]):
+        """Send formatted data to RabbitMQ queue"""
+        if not data_points:
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: No data points to publish.")
+            return
+
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Publishing {len(data_points)} data points to queue. Sample: {data_points[0]}...")
+        await self.message_sender.send_to_queue(data_points)
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Successfully published message to queue.")
+    
+    async def run_once(self):
+        """Execute one cycle of data fetching and sending"""
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Starting data fetch cycle for {self.source_type} source")
+        data_points = await self.fetch_external_data()
+        if data_points:
+            await self.send_to_queue(data_points)
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Completed data fetch cycle successfully")
+        else:
+            print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: No data to send")
+            # The template raises an exception for run_once with no data, maintaining this behavior.
+            raise Exception("No data points were fetched from the source")
+    
+    async def run_continuous(self):
+        """Run the wrapper continuously with intervals based on periodicity"""
+        interval_seconds = self.get_interval_seconds()
+        print(f"[{datetime.now().isoformat()}] Wrapper {self.wrapper_id}: Starting continuous execution with {self.periodicity} periodicity ({interval_seconds} seconds)")
+        await self.continuous_executor.run_continuous(
+            run_once_func=self.run_once,
+            fetch_historical_func=self.fetch_historical_data if not self.historical_data_fetched else None,
+            source_type=self.source_type
+        )
+    
+# Entry point for generated wrapper
+if __name__ == "__main__":
+    import sys
+    
+    if len(sys.argv) < 3:
+        raise ValueError("wrapper_id and source_config are required as arguments")
+    wrapper_id = sys.argv[1]
+    source_config_json = sys.argv[2]
+
+    # Parse source config
+    try:
+        source_config = json.loads(source_config_json)
+    except json.JSONDecodeError:
+        raise ValueError("source_config must be valid JSON")
+
+    # Pass source_config to the wrapper constructor
+    wrapper = ATTWrapper(wrapper_id, source_config=source_config)
+    
+    # Determine execution mode based on source type
+    if wrapper.source_type in ["CSV", "XLSX"]:
+        print(f"[{datetime.now().isoformat()}] File source ({wrapper.source_type}) detected - running once")
+        asyncio.run(wrapper.run_once())
+    else:
+        print(f"[{datetime.now().isoformat()}] API source detected - running continuously with {wrapper.periodicity} periodicity")
+        asyncio.run(wrapper.run_continuous())
