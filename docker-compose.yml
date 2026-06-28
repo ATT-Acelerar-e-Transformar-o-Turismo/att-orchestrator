@@ -5,6 +5,7 @@ include:
   - ./indicator-service/docker-compose.yml
   - ./knowledge-base/docker-compose.yml
   - ./user-interface/docker-compose.yml
+  - ./att-chatbot/docker-compose.yml
 
 services:
   reverse-proxy:

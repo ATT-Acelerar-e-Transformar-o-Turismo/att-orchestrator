@@ -69,6 +69,26 @@ services:
     networks:
       - att-network
 
+  att-chatbot:
+    container_name: att-chatbot
+    ports:
+      - "8086:8080"
+    environment:
+      - KB_URL=http://knowledge-base:8080
+      - KEYCLOAK_JWKS_URL=http://att-keycloak:7080/auth/realms/att/protocol/openid-connect/certs
+      - CHATBOT_MODEL=${CHATBOT_MODEL:-ollama=llama3.1:8b}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      - GATEWAY_MODE=${GATEWAY_MODE:-secure}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - att-network
+    depends_on:
+      knowledge-base:
+        condition: service_started
+      keycloak:
+        condition: service_started
+
   reverse-proxy:
     restart: on-failure
     depends_on:
@@ -83,6 +103,8 @@ services:
       knowledge-base:
         condition: service_started
       user-interface:
+        condition: service_started
+      att-chatbot:
         condition: service_started
     networks:
       - att-network
