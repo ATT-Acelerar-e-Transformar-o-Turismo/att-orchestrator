@@ -16,3 +16,6 @@
 [submodule "user-interface"]
 	path = user-interface
 	url = git@github.com:ATT-Acelerar-e-Transformar-o-Turismo/user-interface.git
+[submodule "att-chatbot"]
+	path = att-chatbot
+	url = git@github.com:ATT-Acelerar-e-Transformar-o-Turismo/att-chatbot.git
